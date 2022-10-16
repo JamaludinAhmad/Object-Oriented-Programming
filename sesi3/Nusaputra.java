@@ -63,7 +63,10 @@ public class Nusaputra extends Mahasiswa {
     }
 
     public static void printNilai(ArrayList<Mahasiswa> mhs, String nilai){
-        System.out.print("Jumlah mahasiswa dengan nilai " + nilai +  " : " + jumlahGrade(mhs, nilai) + " yaitu ");
+        if(jumlahGrade(mhs, nilai) > 0){
+            System.out.print("Jumlah mahasiswa dengan nilai " + nilai +  " : " + jumlahGrade(mhs, nilai) + " yaitu ");
+        }
+        
         for(int i = 0; i < mhs.size(); i++){
             if(mhs.get(i).getGrade().equals(nilai)){
                 System.out.print(mhs.get(i).getNama() + ", ");
