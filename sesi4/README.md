@@ -7,6 +7,6 @@
 ### Pertambahan.java
 kode ini merupakan implementasi polimorfisme overloading
 
-###Hero.java
+### Hero.java
 Hero.cs merupakan super class yang memiliki method suaraKhas
 Wizzard.java , Assassin.java, Thief.java akan mengimplementasikan polimorfisme override dengan cara mebuat method superKhas yang sama seperti di Hero.cs
