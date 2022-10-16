@@ -49,11 +49,6 @@ public class Nusaputra extends Mahasiswa {
         System.out.println();
         System.out.println("rata rata nilai: ");
         rataRata(mhs);
-
-
-
-
-
         
     }
 
