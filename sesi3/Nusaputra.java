@@ -46,6 +46,10 @@ public class Nusaputra extends Mahasiswa {
         printNilai(mhs, "C");
         printNilai(mhs, "D");
         printNilai(mhs, "E");
+        System.out.println();
+        System.out.println("rata rata nilai: ");
+        rataRata(mhs);
+
 
 
 
@@ -64,6 +68,7 @@ public class Nusaputra extends Mahasiswa {
 
     public static void printNilai(ArrayList<Mahasiswa> mhs, String nilai){
         if(jumlahGrade(mhs, nilai) > 0){
+            System.out.println();
             System.out.print("Jumlah mahasiswa dengan nilai " + nilai +  " : " + jumlahGrade(mhs, nilai) + " yaitu ");
         }
         
@@ -72,7 +77,6 @@ public class Nusaputra extends Mahasiswa {
                 System.out.print(mhs.get(i).getNama() + ", ");
             }
         }
-        System.out.println();
     }
 
     public static int jumlahGrade(ArrayList<Mahasiswa> mhs, String nilai){
@@ -83,6 +87,24 @@ public class Nusaputra extends Mahasiswa {
             }
         }
         return jumlah;
+    }
+
+    public static float rataRata(ArrayList<Mahasiswa> mhs){
+        System.out.println();
+        int jumlah = 0;
+        for(int i = 0; i < mhs.size(); i++){
+            if(mhs.get(i).getNilai() <= 100 && mhs.get(i).getNilai() >= 0){
+                jumlah += mhs.get(i).getNilai();
+                System.out.print(mhs.get(i).getNilai() + " + ");
+            }
+            else{
+                System.out.println("0 + ");
+            }
+        }
+
+        System.out.print(" = " + (float)jumlah/mhs.size());
+
+        return jumlah / mhs.size();
     }
 
 
