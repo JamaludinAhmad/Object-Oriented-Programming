@@ -1,34 +1,52 @@
 package sesi3;
 
 public class Mahasiswa {
-    String nama, nim;
+    String nama, nim, grade;
     int nilai;
 
     Mahasiswa(String nama, String nim, int nilai){
         this.nama = nama;
-        this.nama = nim;
+        this.nim = nim;
         this.nilai = nilai;
+        setGrade();
+
     }
 
-    public String getGrade(){
+
+    public void setGrade(){
         if(getNilai() >= 80 && getNilai() <= 100){
-            return "A";
+            SetGrade("A");
         }
 
         else if(getNilai() >= 70 && getNilai() < 80){
-            return "B";
+            SetGrade("B");
         }
 
         else if((getNilai() >= 60 && getNilai() < 70)){
-            return "C";
+            SetGrade("C");
         }
 
         else if((getNilai() >= 50 && getNilai() < 60)){
-            return "D";
+            SetGrade("D");
         }
-        
-        return "E";
+        else if((getNilai() < 50)){
+            SetGrade("E");
+        }
+        else{
+            SetGrade("Input nilai anda salah");
+        }
     }
+
+    public void SetGrade(String grade){
+        this.grade = grade;
+    }
+
+    public String getGrade(){
+        return this.grade;
+    }
+
+
+
 
     public void infoMahasiswa(){
         System.out.println("NIM: " + getNim());
