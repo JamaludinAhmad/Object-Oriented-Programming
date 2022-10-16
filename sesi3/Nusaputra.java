@@ -50,6 +50,7 @@ public class Nusaputra extends Mahasiswa {
         System.out.println("rata rata nilai: ");
         rataRata(mhs);
         
+        sc.close();
     }
 
     public static void printMhs(ArrayList<Mahasiswa> mhs){
