@@ -23,6 +23,8 @@ public class Main {
             }
             gunakanLaptop(andri, input);
         }
+
+        in.close();
         
     }
     
