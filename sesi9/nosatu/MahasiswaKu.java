@@ -1,4 +1,4 @@
-package sesi10.nosatu;
+package sesi9.nosatu;
 
 class Mahasiswa <T,O,P> {
     private T nim;
