@@ -39,7 +39,7 @@ public class TicTacToe extends JFrame implements ActionListener{
                     btn[i].setText("X");
                     x = !x;
                 }
-                else if(e.getSource() == btn[i] && btn[i].getText().isEmpty()){
+                else{
                     btn[i].setText("O");
                     x = !x;
                 }
