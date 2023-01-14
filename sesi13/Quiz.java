@@ -84,6 +84,7 @@ public class Quiz extends JFrame implements ActionListener {
         try {
 
             int hasil = Integer.parseInt(input3.getText());
+            
             if(x + y == hasil){
                 getContentPane().setBackground(Color.green);
                 ket.setText("Selamat jawaban anda benar!!!");
