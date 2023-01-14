@@ -18,6 +18,7 @@ public class TicTacToe extends JFrame implements ActionListener{
         
         for(int i = 0; i < 9; i++){
             btn[i] = new JButton();
+            btn[i].setBackground(Color.gray);
             btn[i].addActionListener(this);
             add(btn[i]);
         }
@@ -43,6 +44,7 @@ public class TicTacToe extends JFrame implements ActionListener{
                     btn[i].setText("O");
                     x = !x;
                 }
+                btn[i].setBackground(Color.white);
             }
         }
 
